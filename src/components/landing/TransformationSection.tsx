@@ -1,8 +1,10 @@
+import { ArrowRight } from "lucide-react";
+
 const steps = [
-  { num: "01", title: "Aprenda as Receitas", desc: "Siga o passo a passo simples do ebook" },
-  { num: "02", title: "Produza os Ovos", desc: "Monte ovos profissionais na sua cozinha" },
-  { num: "03", title: "Divulgue e Venda", desc: "Use as estratégias de marketing incluídas" },
-  { num: "04", title: "Lucre!", desc: "Receba suas encomendas e fature alto" },
+  { num: "01", title: "Aprenda as Receitas", desc: "Siga o passo a passo simples e ilustrado do ebook", emoji: "📖" },
+  { num: "02", title: "Produza os Ovos", desc: "Monte ovos com acabamento profissional na sua cozinha", emoji: "🥚" },
+  { num: "03", title: "Divulgue e Venda", desc: "Use as estratégias de marketing prontas para WhatsApp e Instagram", emoji: "📱" },
+  { num: "04", title: "Lucre Alto!", desc: "Receba encomendas e fature de R$1.000 a R$5.000", emoji: "💰" },
 ];
 
 const TransformationSection = () => {
@@ -11,17 +13,26 @@ const TransformationSection = () => {
       <div className="container max-w-3xl space-y-10">
         <div className="text-center">
           <h2 className="text-2xl md:text-4xl font-serif text-foreground">
-            Do Zero à <span className="text-gradient-gold">Primeira Venda</span>
+            4 Passos para Sair do{" "}
+            <span className="text-gradient-gold">Zero ao Lucro</span>
           </h2>
-          <p className="text-muted-foreground mt-3">Um caminho simples e direto para começar a lucrar</p>
+          <p className="text-muted-foreground mt-3">Simples, direto e sem enrolação</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="space-y-4">
           {steps.map((step, i) => (
-            <div key={i} className="relative bg-card p-6 rounded-lg border border-border">
-              <span className="text-4xl font-bold text-gold/20 absolute top-3 right-4 font-serif">{step.num}</span>
-              <h3 className="font-semibold text-foreground text-lg">{step.title}</h3>
-              <p className="text-muted-foreground text-sm mt-1">{step.desc}</p>
+            <div key={i} className="flex items-start gap-4 bg-card p-6 rounded-xl border border-border hover:border-gold/30 hover:shadow-gold/10 hover:shadow-lg transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-gradient-gold flex items-center justify-center flex-shrink-0 text-2xl group-hover:scale-110 transition-transform">
+                {step.emoji}
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-bold text-gold uppercase tracking-wider">Passo {step.num}</span>
+                  {i < steps.length - 1 && <ArrowRight className="w-3 h-3 text-gold/40" />}
+                </div>
+                <h3 className="font-semibold text-foreground text-lg mt-1">{step.title}</h3>
+                <p className="text-muted-foreground text-sm mt-0.5">{step.desc}</p>
+              </div>
             </div>
           ))}
         </div>
