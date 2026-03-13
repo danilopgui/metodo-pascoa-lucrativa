@@ -11,6 +11,11 @@ export default function Obrigado() {
       padding: "20px"
     }}>
 
+      fbq('track', 'Purchase', {
+        value: 19.90,
+        currency: 'BRL'
+    });
+      
       <h1>🎉 Compra confirmada!</h1>
 
       <p>
