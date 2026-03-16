@@ -62,13 +62,20 @@ const PriceSection = () => {
           </div>
 
           <div className="pt-2 space-y-3">
-            <CTAButton size="lg" className="w-full">
-              🛒 QUERO COMEÇAR AGORA — R$19,90
+            <CTAButton
+            size="lg"
+            className="w-full"
+            onClick={() => window.open("https://ggcheckout.com.br/checkout/v5/peKFSPFpnd2rXD2YheSl", "_blank")}
+          >
+            🛒 QUERO COMEÇAR AGORA — R$19,90
             </CTAButton>
-            <div className="flex items-center justify-center gap-4 text-[11px] text-gold-light/40">
-              <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5" /> Compra segura</span>
-              <span>💳 Cartão, PIX ou boleto</span>
-            </div>
+
+          <div className="flex items-center justify-center gap-4 text-[11px] text-gold-light/40">
+              <span className="flex items-center gap-1">
+              <ShieldCheck className="w-3.5 h-3.5" /> Compra segura
+              </span>
+            <span>💳 Cartão, PIX ou boleto</span>
+          </div>
           </div>
         </div>
 
