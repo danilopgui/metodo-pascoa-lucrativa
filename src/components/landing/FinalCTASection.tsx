@@ -1,5 +1,6 @@
 import CTAButton from "@/components/CTAButton";
 import CountdownTimer from "@/components/landing/CountdownTimer";
+import ebookPreview5 from "@/assets/ebook-preview-5.jpg";
 
 const FinalCTASection = () => {
   return (
