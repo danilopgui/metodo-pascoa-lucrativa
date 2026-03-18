@@ -1,5 +1,6 @@
 import flavorsImage from "@/assets/flavors.jpg";
 import CTAButton from "@/components/CTAButton";
+import ebookPreview3 from "@/assets/ebook-preview-3.png";
 
 const flavors = [
   "Brigadeiro", "Leite Ninho", "Oreo", "Kinder Bueno",
