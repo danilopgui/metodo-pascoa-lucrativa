@@ -40,6 +40,15 @@ const WhatYouLearnSection = () => {
             </div>
           ))}
         </div>
+
+        <div className="flex justify-center pt-4">
+          <img
+            src={ebookPreview2}
+            alt="Passo a passo do ebook - tutorial e utensílios"
+            className="w-full max-w-md rounded-xl shadow-lg"
+            loading="lazy"
+          />
+        </div>
       </div>
     </section>
   );

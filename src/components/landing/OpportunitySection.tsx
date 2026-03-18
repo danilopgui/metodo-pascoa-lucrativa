@@ -37,6 +37,15 @@ const OpportunitySection = () => {
           ))}
         </div>
 
+        <div className="flex justify-center pt-4">
+          <img
+            src={ebookPreview4}
+            alt="Cardápio de ovos de colher para vender"
+            className="w-full max-w-sm rounded-xl shadow-lg"
+            loading="lazy"
+          />
+        </div>
+
         <CTAButton onClick={() => document.getElementById("preco")?.scrollIntoView({ behavior: "smooth" })}>
           QUERO GARANTIR MINHA VAGA
         </CTAButton>

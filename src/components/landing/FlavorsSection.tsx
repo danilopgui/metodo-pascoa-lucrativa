@@ -42,6 +42,15 @@ const FlavorsSection = () => {
           </div>
         </div>
 
+        <div className="flex justify-center pt-6">
+          <img
+            src={ebookPreview3}
+            alt="Receitas do ebook - Suflair, 4 Leites, Limão Siciliano"
+            className="w-full max-w-lg rounded-xl shadow-lg"
+            loading="lazy"
+          />
+        </div>
+
         <div className="text-center pt-2">
           <CTAButton onClick={() => document.getElementById("preco")?.scrollIntoView({ behavior: "smooth" })}>
             QUERO APRENDER TODAS AS RECEITAS
