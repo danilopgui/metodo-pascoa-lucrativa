@@ -1,4 +1,5 @@
 import CTAButton from "@/components/CTAButton";
+import ebookPreview4 from "@/assets/ebook-preview-4.jpg";
 
 const stats = [
   { number: "10x", label: "Retorno sobre o investimento inicial" },
