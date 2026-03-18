@@ -1,5 +1,6 @@
 import CTAButton from "@/components/CTAButton";
 import CountdownTimer from "@/components/landing/CountdownTimer";
+import ebookPreview5 from "@/assets/ebook-preview-5.jpg";
 
 const FinalCTASection = () => {
   return (
@@ -15,6 +16,15 @@ const FinalCTASection = () => {
           Enquanto você pensa, outras pessoas já estão produzindo e vendendo.
           A Páscoa não espera. <strong className="text-gold">Comece agora.</strong>
         </p>
+
+        <div className="flex justify-center">
+          <img
+            src={ebookPreview5}
+            alt="Faça sua encomenda - ovos artesanais"
+            className="w-full max-w-xs rounded-xl shadow-lg"
+            loading="lazy"
+          />
+        </div>
 
         <div className="py-2">
           <CountdownTimer />

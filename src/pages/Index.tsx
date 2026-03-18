@@ -1,4 +1,5 @@
 import HeroSection from "@/components/landing/HeroSection";
+import EbookPreviewStrip from "@/components/landing/EbookPreviewStrip";
 import ProblemSection from "@/components/landing/ProblemSection";
 import OpportunitySection from "@/components/landing/OpportunitySection";
 import ProductSection from "@/components/landing/ProductSection";
@@ -16,6 +17,7 @@ const Index = () => {
   return (
     <main>
       <HeroSection />
+      <EbookPreviewStrip />
       <ProblemSection />
       <OpportunitySection />
       <ProductSection />

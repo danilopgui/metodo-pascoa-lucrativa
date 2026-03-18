@@ -1,5 +1,6 @@
 import flavorsImage from "@/assets/flavors.jpg";
 import CTAButton from "@/components/CTAButton";
+import ebookPreview3 from "@/assets/ebook-preview-3.png";
 
 const flavors = [
   "Brigadeiro", "Leite Ninho", "Oreo", "Kinder Bueno",
@@ -39,6 +40,15 @@ const FlavorsSection = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="flex justify-center pt-6">
+          <img
+            src={ebookPreview3}
+            alt="Receitas do ebook - Suflair, 4 Leites, Limão Siciliano"
+            className="w-full max-w-lg rounded-xl shadow-lg"
+            loading="lazy"
+          />
         </div>
 
         <div className="text-center pt-2">

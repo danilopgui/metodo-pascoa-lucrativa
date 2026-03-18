@@ -1,4 +1,5 @@
 import CTAButton from "@/components/CTAButton";
+import ebookPreview4 from "@/assets/ebook-preview-4.jpg";
 
 const stats = [
   { number: "10x", label: "Retorno sobre o investimento inicial" },
@@ -34,6 +35,15 @@ const OpportunitySection = () => {
               <div className="text-[11px] md:text-xs text-gold-light/60 mt-1 leading-tight">{stat.label}</div>
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center pt-4">
+          <img
+            src={ebookPreview4}
+            alt="Cardápio de ovos de colher para vender"
+            className="w-full max-w-sm rounded-xl shadow-lg"
+            loading="lazy"
+          />
         </div>
 
         <CTAButton onClick={() => document.getElementById("preco")?.scrollIntoView({ behavior: "smooth" })}>

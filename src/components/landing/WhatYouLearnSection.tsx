@@ -1,6 +1,7 @@
 import {
   BookOpen, Camera, Calculator, MessageCircle, Instagram, ChefHat, LayoutList
 } from "lucide-react";
+import ebookPreview2 from "@/assets/ebook-preview-2.png";
 
 const modules = [
   { icon: BookOpen, title: "Receitas de Recheios Lucrativos", desc: "Os sabores que mais vendem e geram maior margem de lucro" },
@@ -38,6 +39,15 @@ const WhatYouLearnSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center pt-4">
+          <img
+            src={ebookPreview2}
+            alt="Passo a passo do ebook - tutorial e utensílios"
+            className="w-full max-w-md rounded-xl shadow-lg"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
