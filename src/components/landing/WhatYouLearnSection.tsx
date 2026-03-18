@@ -1,6 +1,7 @@
 import {
   BookOpen, Camera, Calculator, MessageCircle, Instagram, ChefHat, LayoutList
 } from "lucide-react";
+import ebookPreview2 from "@/assets/ebook-preview-2.png";
 
 const modules = [
   { icon: BookOpen, title: "Receitas de Recheios Lucrativos", desc: "Os sabores que mais vendem e geram maior margem de lucro" },
