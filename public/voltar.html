@@ -410,11 +410,33 @@
     </section>
   </main>
 
-const link = 'https://metodopascoalucrativa.com/voltar.html';
-
   <div class="footer-note">
     Método Páscoa Lucrativa © Todos os direitos reservados
   </div>
 
+<script>
+  const link = 'https://metodopascoalucrativa.com/voltar.html';
+
+  function setBackRedirect(url) {
+    let urlBackRedirect = url;
+    urlBackRedirect =
+      urlBackRedirect.trim() +
+      (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+      document.location.search.replace('?', '').toString();
+
+    history.pushState({}, '', location.href);
+    history.pushState({}, '', location.href);
+    history.pushState({}, '', location.href);
+
+    window.addEventListener('popstate', () => {
+      setTimeout(() => {
+        location.href = urlBackRedirect;
+      }, 1);
+    });
+  }
+
+  setBackRedirect(link);
+</script>
+  
 </body>
 </html>
