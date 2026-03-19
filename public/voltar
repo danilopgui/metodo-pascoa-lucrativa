@@ -410,6 +410,8 @@
     </section>
   </main>
 
+const link = 'https://metodopascoalucrativa.com/voltar.html';
+
   <div class="footer-note">
     Método Páscoa Lucrativa © Todos os direitos reservados
   </div>
